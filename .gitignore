@@ -1,0 +1,16 @@
+*.py[co]
+__pycache__/
+.vscode
+*.egg-info
+*.pot
+*.py[co]
+.tox/
+__pycache__
+*-pro.py
+static/uploads/
+static/admin
+static/rest_framework
+.pytest_cache
+myconf.py
+db.sqlite3
+migrations/

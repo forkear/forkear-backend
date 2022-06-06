@@ -1,0 +1,39 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="en" class="h-100">
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <meta name="description" content="backend">
+        <meta name="author" content="Forkear">
+        <title>backend</title>
+        <meta http-equiv="X-UA-Compatible" content="ie=edge">
+        <base href="/">
+        <link href="{% static 'bst/css/bootstrap.min.css' %}" rel="stylesheet">
+        <link rel="stylesheet" href="{% static 'css/style.css' %}">
+        {% block extra_headers %}{% endblock %}
+        <meta name="theme-color" content="#7952b3">
+    </head>
+    <body class="d-flex h-100 text-center text-white bg-dark">
+    
+        <div class="cover-container d-flex w-100 h-100 p-3 mx-auto flex-column">
+            <header class="mb-auto">
+                <div>
+                <h3 class="float-md-start mb-0">Backend</h3>
+                <nav class="nav nav-masthead justify-content-center float-md-end">
+                    <a class="nav-link active" aria-current="page" href="{% url 'home' %}">Home</a>
+                    <a class="nav-link" href="{% url 'admin:index' %}">Admin</a>
+                </nav>
+                </div>
+            </header>
+            <main class="px-3">
+                {% block content %}{% endblock content %}
+            </main>
+            <footer class="mt-auto text-white-50">
+                <p>backend :: Forkear </p>
+            </footer>
+        </div>
+        <script src="{% static 'bst/js/bootstrap.bundle.min.js' %}"></script>
+    </body>
+</html>
+<!-- EOF -->
