@@ -14,3 +14,5 @@ static/rest_framework
 myconf.py
 db.sqlite3
 migrations/
+apitest
+database.sqlite
