@@ -52,6 +52,7 @@ TEMPLATES = [
                 'django.template.context_processors.request',
                 'django.contrib.auth.context_processors.auth',
                 'django.contrib.messages.context_processors.messages',
+                'forkear-backend.context_processors.app_name',
             ],
         },
     },
@@ -102,6 +103,6 @@ STATICFILES_DIRS = [
 DEFAULT_AUTO_FIELD = 'django.db.models.BigAutoField'
 
 ADMIN_SITE_HEADER = "backend"
-
+APP_NAME='Backend :)'
 
 from .myconf import *
