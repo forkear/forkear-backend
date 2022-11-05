@@ -23,6 +23,7 @@
                 <nav class="nav nav-masthead justify-content-center float-md-end">
                     <a class="nav-link active" aria-current="page" href="{% url 'home' %}">Home</a>
                     <a class="nav-link" href="{% url 'admin:index' %}">Admin</a>
+                    <a class="nav-link" href="{% url 'api_root' %}">Api</a>
                 </nav>
                 </div>
             </header>
@@ -30,7 +31,7 @@
                 {% block content %}{% endblock content %}
             </main>
             <footer class="mt-auto text-white-50">
-                <p>backend :: Forkear </p>
+                <p>backend / forkear </p>
             </footer>
         </div>
         <script src="{% static 'bst/js/bootstrap.bundle.min.js' %}"></script>

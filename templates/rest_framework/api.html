@@ -1,0 +1,23 @@
+{% extends "rest_framework/base.html" %}
+{% load static %}
+
+{% block title %}
+    {{block.super}}
+{% endblock title %}
+
+{% block branding %}
+    <a class='navbar-brand' rel="nofollow" href="{% url 'home' %}">
+        {{APP_NAME}}
+    </a>
+<a href="#">
+        
+    </a>
+{% endblock branding %}
+
+{% block style %}
+    {{block.super}}
+    <link rel="stylesheet" href="{% static 'css/api.css' %}">
+{% endblock style %}
+
+
+{# Override this template in your own templates directory to customize #}

@@ -104,6 +104,6 @@ STATICFILES_DIRS = [
 DEFAULT_AUTO_FIELD = 'django.db.models.BigAutoField'
 
 ADMIN_SITE_HEADER = "backend"
-APP_NAME='Backend :)'
+APP_NAME='backend'
 
 from .myconf import *
